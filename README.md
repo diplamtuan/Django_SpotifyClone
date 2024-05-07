@@ -25,21 +25,27 @@ With our website, users can immerse themselves in a vast library of songs spanni
 
 ## Installation
 
-clone my-project
+1. Clone my-project
 
 ```bash
   git clone https://github.com/diplamtuan/Django_SpotifyClone.git
 ```
 
+2. Install dependencies
+
+```bash
+  pip install django
+```
+
 ## Usage Instructions
 
-Open terminal
+1. Open terminal
 
 ```bash
     cd spotify_clone
 ```
 
-Run server
+2. Run server
 
 ```bash
     python runserver manage.py
