@@ -19,9 +19,9 @@ With our website, users can immerse themselves in a vast library of songs spanni
 
 ## Technologies
 
-**Client:** HTML,CSS, TailwindCSS,
+- **Client:** HTML,CSS, TailwindCSS,
 
-**Server:** Django, Python
+- **Server:** Django, Python
 
 ## Installation
 
