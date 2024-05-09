@@ -43,8 +43,8 @@ def get_audio_details(query):
     querystring = {"track":query}
 
     headers = {
-        "X-RapidAPI-Key": "d01f11a307mshf1c4745d6bd7c6fp1d217fjsn80edc9228357",
-            "X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com"
+        "X-RapidAPI-Key": "2d1b3841famshf6403fe9fed2175p15b6d0jsn941b5eb234c5",
+	"X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com"
     }
 
     response = requests.get(url, headers=headers, params=querystring)
@@ -77,8 +77,8 @@ def music(request,pk):
     url = "https://spotify-scraper.p.rapidapi.com/v1/track/metadata"
     querystring = {"trackId":track_id}
     headers = {
-         "X-RapidAPI-Key": "d01f11a307mshf1c4745d6bd7c6fp1d217fjsn80edc9228357",
-            "X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com"
+         "X-RapidAPI-Key": "2d1b3841famshf6403fe9fed2175p15b6d0jsn941b5eb234c5",
+	"X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=querystring)
     if response.status_code == 200:
@@ -106,8 +106,8 @@ def profile(request,pk):
     url = "https://spotify-scraper.p.rapidapi.com/v1/artist/overview"
     querystring = {"artistId":artist_id}
     headers = {
-			 "X-RapidAPI-Key": "d01f11a307mshf1c4745d6bd7c6fp1d217fjsn80edc9228357",
-            "X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com"
+			 "X-RapidAPI-Key": "2d1b3841famshf6403fe9fed2175p15b6d0jsn941b5eb234c5",
+	"X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com"
 	}
     response = requests.get(url, headers=headers, params=querystring)
     if response.status_code == 200:
@@ -151,8 +151,8 @@ def search(request):
         querystring = {"term":seach_query,"type":"track"}
 
         headers = {
-            "X-RapidAPI-Key": "d01f11a307mshf1c4745d6bd7c6fp1d217fjsn80edc9228357",
-            "X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com"
+            "X-RapidAPI-Key": "2d1b3841famshf6403fe9fed2175p15b6d0jsn941b5eb234c5",
+	"X-RapidAPI-Host": "spotify-scraper.p.rapidapi.com"
         }
         response = requests.get(url, headers=headers, params=querystring)
         track_list =[]
